@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sistema de gerenciamento de pet shop para controle de clientes, pets e agendamentos.">
+<title>Banho & Tosa Manager</title>
+</head>
+<body>
+
+<!-- Menu lateral -->
+<aside class="sidebar">
+<div class="logo">
+<span class="logo-icon">🐾</span>
+<h1>Banho & Tosa <span>Manager</span></h1>
+</div>
+
+<nav class="navigation">
+<ul>
+<li>
+<a href="#dashboard" class="active">
+<span>📊</span> Dashboard
+</a>
+</li>
+
+<li>
+<a href="#agendamentos">
+<span>📅</span> Agendamentos
+</a>
+</li>
+
+<li>
+<a href="#pets">
+<span>🐶</span> Pets
+</a>
+</li>
+
+<li>
+<a href="#clientes">
+<span>👥</span> Clientes
+</a>
+</li>
+
+<li>
+<a href="#servicos">
+<span>✂️</span> Serviços
+</a>
+</li>
+</ul>
+</nav>
+
+<div class="sidebar-footer">
+<p>Sistema de gerenciamento</p>
+<span>Versão 1.0</span>
+</div>
+</aside>
+
+<!-- Conteúdo principal -->
+<main class="main-content">
+
+<!-- Cabeçalho -->
+<header class="topbar">
+<div class="welcome">
+<h2>Dashboard</h2>
+<p>Bem-vindo ao Banho & Tosa Manager!</p>
+</div>
+
+<div class="user-profile">
+<span class="user-avatar">👤</span>
+<div>
+<strong>Administrador</strong>
+<small>Pet Shop</small>
+</div>
+</div>
+</header>
+
+<!-- Dashboard -->
+<section id="dashboard" class="dashboard">
+
+<!-- Cards de resumo -->
+<div class="summary-cards">
+
+<article class="summary-card">
+<div class="card-icon">📅</div>
+<div class="card-info">
+<p>Agendamentos hoje</p>
+<h3 id="appointments-today">0</h3>
+</div>
+</article>
+
+<article class="summary-card">
+<div class="card-icon">🐶</div>
+<div class="card-info">
+<p>Pets cadastrados</p>
+<h3 id="pets-count">0</h3>
+</div>
+</article>
+
+<article class="summary-card">
+<div class="card-icon">👥</div>
+<div class="card-info">
+<p>Clientes cadastrados</p>
+<h3 id="clients-count">0</h3>
+</div>
+</article>
+
+<article class="summary-card">
+<div class="card-icon">💰</div>
+<div class="card-info">
+<p>Faturamento do dia</p>
+<h3 id="daily-revenue">R$ 0,00</h3>
+</div>
+</article>
+
+</div>
+
+<!-- Próximos agendamentos -->
+<section id="agendamentos" class="content-section">
+<div class="section-header">
+<div>
+<h2>Próximos agendamentos</h2>
+<p>Acompanhe os serviços programados</p>
+</div>
+
+<button id="new-appointment-btn" type="button">
++ Novo agendamento
+</button>
+</div>
+
+<div class="appointments-container">
+<table>
+<thead>
+<tr>
+<th>Pet</th>
+<th>Cliente</th>
+<th>Serviço</th>
+<th>Horário</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="appointments-list">
+<tr>
+<td colspan="5">Nenhum agendamento cadastrado.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- Atendimentos recentes -->
+<section class="content-section recent-section">
+<div class="section-header">
+<div>
+<h2>Atendimentos recentes</h2>
+<p>Últimos serviços realizados</p>
+</div>
+</div>
+
+<div id="recent-appointments">
+<p>Nenhum atendimento recente.</p>
+</div>
+</section>
+
+</section>
+
+<!-- Seção de pets -->
+<section id="pets" class="content-section">
+<div class="section-header">
+<div>
+<h2>Pets cadastrados</h2>
+<p>Gerencie os animais cadastrados no sistema</p>
+</div>
+</div>
+
+<div id="pets-list">
+<p>Nenhum pet cadastrado.</p>
+</div>
+</section>
+
+<!-- Seção de clientes -->
+<section id="clientes" class="content-section">
+<div class="section-header">
+<div>
+<h2>Clientes</h2>
+<p>Gerencie os clientes do pet shop</p>
+</div>
+</div>
+
+<div id="clients-list">
+<p>Nenhum cliente cadastrado.</p>
+</div>
+</section>
+
+<!-- Seção de serviços -->
+<section id="servicos" class="content-section">
+<div class="section-header">
+<div>
+<h2>Serviços</h2>
+<p>Serviços disponíveis no pet shop</p>
+</div>
+</div>
+
+<div id="services-list">
+<p>Serviços serão exibidos aqui.</p>
+</div>
+</section>
+
+</main>
+
+</body>
+</html>
