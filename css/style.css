@@ -1,0 +1,63 @@
+/* ==============================
+RESET E CONFIGURAÇÕES GLOBAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root {
+    --primary-color: #26966f;
+    --primary-dark: #197653;
+    --secondary-color: #e9f5ef;
+    --background-color: #f5f7f6;
+    --white: #ffffff;
+    --text-color: #26332d;
+    --text-light: #7b8780;
+    --border-color: #e5ebe7;
+    --success-color: #2e9d68;
+    --warning-color: #e8a23b;
+    --danger-color: #dc5b5b;
+    
+    --font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.5;
+    }
+    
+    button,
+    input,
+    select,
+    textarea {
+    font: inherit;
+    }
+    
+    button {
+    cursor: pointer;
+    }
+    
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    ul {
+    list-style: none;
+    }
+    
+    img {
+    max-width: 100%;
+    display: block;
+    }
+    
